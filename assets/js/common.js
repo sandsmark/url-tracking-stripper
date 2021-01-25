@@ -1,12 +1,13 @@
 'use strict';
 
-const {
+import {
   STORAGE_KEY_STRIPPING_METHOD_TO_USE,
   CONTEXT_MENU_COPY_CLEAN_ID,
   CONTEXT_MENU_CLEAN_AND_GO_ID,
   DEFAULT_STRIPPING_METHOD
-}                                       = require('./consts');
+}                                       from './consts.js';
 
+//import {getOptionsFromStorage} from "./common.js";
 
 function getOptionsFromStorage(cb, options) {
   options = options || {
@@ -60,7 +61,7 @@ function findQueryParam(targetParam, url) {
 }
 
 
-module.exports = {
+export {
   getOptionsFromStorage,
   findQueryParam
 };

@@ -129,7 +129,7 @@ function removeTrackersFromUrl(url, trackers) {
 
 
 
-module.exports = {
+export {
   ALL_TRACKERS,
   removeTrackersFromUrl,
 };

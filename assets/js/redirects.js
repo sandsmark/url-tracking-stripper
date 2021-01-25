@@ -1,8 +1,8 @@
 'use strict';
 
-const {
+import {
   findQueryParam
-}                               = require('./common');
+} from './common.js';
 
 const SCHEMA          = '<SCHEMA>';
 const SUBDOMAIN       = '<SUBDOMAIN>';
@@ -287,7 +287,7 @@ function followRedirect(url) {
 
 
 
-module.exports = {
+export {
   KNOWN_REDIRECTS,
   REDIRECT_DATA_BY_TARGET_PARAM,
   escapeRegExp,

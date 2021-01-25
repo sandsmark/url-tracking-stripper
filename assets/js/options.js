@@ -1,13 +1,13 @@
 'use strict';
 
-const { getOptionsFromStorage }               = require('./common');
-const {
+import { getOptionsFromStorage } from './common.js';
+import {
   STORAGE_KEY_STRIPPING_METHOD_TO_USE,
   CONTEXT_MENU_COPY_CLEAN_ID,
   CONTEXT_MENU_CLEAN_AND_GO_ID,
   ACTION_OPTIONS_SAVED,
   ACTION_GET_STUFF_BY_STRIPPING_METHOD_ID
-}                                             = require('./consts');
+} from './consts.js';
 
 
 const OPTIONS_SAVED_TIMEOUT = 3000;

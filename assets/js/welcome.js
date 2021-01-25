@@ -1,7 +1,7 @@
 'use strict';
 
-const { REASON_INSTALL, REASON_UPDATE } = require('./consts');
-const { findQueryParam }                = require('./common');
+import { REASON_INSTALL, REASON_UPDATE } from './consts';
+import { findQueryParam } from './common.js';
 
 // Once the page content is loaded:
 document.addEventListener('DOMContentLoaded', function() {

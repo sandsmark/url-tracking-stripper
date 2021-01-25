@@ -1,8 +1,8 @@
 'use strict';
 
-const {
+import {
   ALL_TRACKERS
-} = require("./trackers");
+} from "./trackers.js";
 
 class DomainMatcher {
   constructor(hostname, options) {
@@ -118,6 +118,8 @@ const DEFAULT_DOMAIN_RULES = [
 
 const COMBINED_DOMAIN_RULES = DEFAULT_DOMAIN_RULES;
 
-module.exports = {
-  DOMAIN_RULES: COMBINED_DOMAIN_RULES,
+const DOMAIN_RULES = COMBINED_DOMAIN_RULES;
+
+export {
+  DOMAIN_RULES
 };

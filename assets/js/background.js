@@ -1,24 +1,18 @@
 'use strict';
 
-const {
-  getOptionsFromStorage,
-}                                               = require('./common');
+import { getOptionsFromStorage } from "./common.js";
 
-const {
-  removeTrackersFromUrl,
-}                                               = require('./trackers');
+import { removeTrackersFromUrl, } from './trackers.js';
 
-const {
+import {
   REDIRECT_DATA_BY_TARGET_PARAM,
   extractRedirectTarget,
   followRedirect,
-}                                               = require('./redirects');
+} from './redirects.js';
 
-const {
-  DOMAIN_RULES,
-}                                               = require('./rules');
+import { DOMAIN_RULES, } from './rules.js';
 
-const {
+import {
   REASON_INSTALL,
   REASON_UPDATE,
   STORAGE_KEY_STRIPPING_METHOD_TO_USE,
@@ -38,7 +32,7 @@ const {
   CONTEXT_MENU_COPY_CLEAN_TEXT,
   CONTEXT_MENU_CLEAN_AND_GO_ID,
   CONTEXT_MENU_CLEAN_AND_GO_TEXT
-}                                               = require('./consts');
+} from './consts.js';
 
 
 
